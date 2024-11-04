@@ -19,15 +19,25 @@ const theme = createTheme({
       highlight: '#1f1f1f', // Paper background for cards, etc.
       elevatedPress: '#191919',
     },
-
+    white: {
+      default: "#fff"
+    },
     text: {
       primary: '#333333', // Dark grey for text
       secondary: '#757575', // Medium grey for secondary text
     },
   },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "white"
+        }
+      }
+    }
+  },
   typography: {
     fontFamily: "'SpotifyMixUI', 'Helvetica', 'Arial', sans-serif",
-    fontWeightBold: 'bolder',
     button: {
       textTransform: 'none',
     },
