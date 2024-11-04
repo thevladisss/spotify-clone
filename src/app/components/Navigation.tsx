@@ -1,5 +1,6 @@
 'use client';
 import React, {useState} from 'react'
+import AppInput from '@/app/components/app/AppInput'
 import { Button, TextField} from "@mui/material";
 
 function Navigation(): JSX.Element {
@@ -10,8 +11,8 @@ function Navigation(): JSX.Element {
           <div className="columns-2">
             Logo
           </div>
-          <div className="grow">
-            <TextField variant="outlined" className="w-full" size="small" color="primary"></TextField>
+          <div className="grow flex justify-center">
+            <AppInput></AppInput>
           </div>
           <div className="flex gap-4 col-2">
             <Button variant="outlined" color="white">
