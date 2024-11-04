@@ -1,13 +1,12 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
 
-
 const theme = createTheme({
   palette: {
     primary: {
       main: '#1ed760', // Orange - main brand color
-      highlight: "#3be477",
-      press: "#1abc54"
+      highlight: '#3be477',
+      press: '#1abc54',
     },
     secondary: {
       main: '#333333', // Dark grey
@@ -17,8 +16,8 @@ const theme = createTheme({
     },
     background: {
       default: '#121212', // Light grey background
-      highlight: '#1f1f1f',   // Paper background for cards, etc.
-      elevatedPress: "#191919"
+      highlight: '#1f1f1f', // Paper background for cards, etc.
+      elevatedPress: '#191919',
     },
 
     text: {
@@ -27,7 +26,8 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+    fontFamily: "'SpotifyMixUI', 'Helvetica', 'Arial', sans-serif",
+    fontWeightBold: 'bolder',
     button: {
       textTransform: 'none',
     },
@@ -35,4 +35,3 @@ const theme = createTheme({
 });
 
 export default theme;
-
