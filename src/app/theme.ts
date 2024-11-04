@@ -20,6 +20,7 @@ const theme = createTheme({
       highlight: '#1f1f1f',   // Paper background for cards, etc.
       elevatedPress: "#191919"
     },
+
     text: {
       primary: '#333333', // Dark grey for text
       secondary: '#757575', // Medium grey for secondary text

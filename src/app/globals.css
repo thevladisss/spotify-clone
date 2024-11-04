@@ -25,3 +25,32 @@ body {
     text-wrap: balance;
   }
 }
+
+
+.bg-primary {
+  background-color: #121212;
+}
+
+.bg-primary-highlight {
+  background-color: #1f1f1f
+}
+
+.bg-primary-press {
+  background-color: #191919;
+}
+
+.bg-primary-light {
+  background-color: #FFA733
+}
+.bg-primary-dark {
+  background-color: #CC7000;
+}
+.bg-secondary {
+  background-color: #333333;
+}
+.bg-secondary-light {
+  background-color: #4F4F4F;
+}
+.bg-secondary-dark {
+  background-color: #1A1A1A;
+}
