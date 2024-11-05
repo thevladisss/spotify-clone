@@ -1,18 +1,34 @@
-import React, {useMemo} from 'react'
-import {Button} from "@mui/material";
+import React, {useMemo, PropsWithChildren, HTMLProps} from 'react'
+import {Button, ButtonProps} from "@mui/material";
 
-function AppButton(props: Record<string, any>): JSX.Element {
+type AppButtonProps =  {
+  transparent?:boolean
+} & ButtonProps & PropsWithChildren & HTMLProps<any>
+
+
+
+function AppButton(props: AppButtonProps): JSX.Element {
 
   const {children, ...propsAndAttrs} = props;
 
   const styles = useMemo(() => {
-    return props.style ? props.style : {
-      borderRadius: "16px"
+    if (props.style) return props.style;
+
+    const allStyles: React.CSSProperties = {
+      borderRadius: "20px",
+      padding: "8px 28px"
     }
-  }, [props.style])
+
+    if (props.transparent) {
+        allStyles.color = "white"
+        allStyles.backgroundColor = "transparent";
+    }
+
+    return allStyles;
+  }, [props.style, props.transparent])
 
   return (
-    <Button className="rouned-" style={styles} {...propsAndAttrs}>
+    <Button style={styles} {...propsAndAttrs}>
       {children}
     </Button>
   )
