@@ -1,0 +1,8 @@
+.MuiTextField-root > .MuiInputBase-root {
+  border-radius: inherit;
+}
+
+.MuiTextField-root {
+  background-color: var(--secondary);
+  border-radius: 200px;
+}
