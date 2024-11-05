@@ -4,7 +4,7 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1ed760', // Orange - main brand color
+      main: '#1ed760', // Orange - (index) brand color
       highlight: '#3be477',
       press: '#1abc54',
     },
@@ -20,7 +20,7 @@ const theme = createTheme({
       elevatedPress: '#191919',
     },
     white: {
-      default: "#fff"
+      main: "#fff",
     },
     text: {
       primary: '#333333', // Dark grey for text
