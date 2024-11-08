@@ -44,14 +44,14 @@ body {
 @font-face {
   font-family: 'SpotifyMixUITitle';
   src: url('/fonts/SpotifyMixUITitle-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'SpotifyMixUITitle';
   src: url('/fonts/SpotifyMixUITitle-Bolder.woff2') format('woff2');
-  font-weight: bolder;
+  font-weight: 500;
   font-style: normal;
 }
 

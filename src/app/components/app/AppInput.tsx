@@ -1,11 +1,11 @@
-import { TextField } from '@mui/material'
+import {TextField, TextFieldProps} from '@mui/material'
 import React, { useMemo } from 'react'
 import './AppInput.css'
 
-function AppInput(props: Record<string, any>): JSX.Element{
-    
+function AppInput(props: Record<string, any> & TextFieldProps): JSX.Element{
+
     return (
-        <TextField  color="secondary" {...props}></TextField>
+        <TextField {...props}></TextField>
     )
 }
 
