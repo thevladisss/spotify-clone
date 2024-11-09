@@ -14,14 +14,15 @@ function AppButton(props: AppButtonProps): JSX.Element {
 
   const {children, textColor, transparent, className,  ...propsAndAttrs} = props;
 
+
+  const transparentVariantProps: ButtonProps ={
+    disableRipple: true
+  }
+
   const computedStyles = useMemo(() => {
 
-    const transparentVariantProps: ButtonProps ={
-      disableRipple: true
-    }
-
     const allStyles: React.CSSProperties = {
-      color: props.textColor ? props.textColor : "auto",
+      color: textColor ? textColor : "auto",
       ...(props.style ? props.style : {}),
     }
 
@@ -32,8 +33,9 @@ function AppButton(props: AppButtonProps): JSX.Element {
     [styles.AppButton_transparent]: transparent,
   } as any)
 
+
   return (
-    <Button className={AppButtonClasses} style={computedStyles} {...propsAndAttrs}>
+    <Button className={AppButtonClasses} style={computedStyles} {...({...propsAndAttrs, ...transparentVariantProps})}>
       {children}
     </Button>
   )

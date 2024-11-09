@@ -1,6 +1,6 @@
 .AppButton {
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 8px 32px !important;
     transition: all .4s ease;
 }
 
