@@ -31,6 +31,10 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
+          borderRadius: "20px",
+          padding: "8px 20px",
+          fontFamily: "SpotifyMixUI",
+          fontWeight: "bold",
           backgroundColor: "white"
         }
       }

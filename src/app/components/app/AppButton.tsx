@@ -1,34 +1,39 @@
 import React, {useMemo, PropsWithChildren, HTMLProps} from 'react'
 import {Button, ButtonProps} from "@mui/material";
+import styles from "@/app/css/AppButton.module.css"
+import classNames from "classnames";
 
 type AppButtonProps =  {
   transparent?:boolean
+  textColor?: string
 } & ButtonProps & PropsWithChildren & HTMLProps<any>
 
 
 
 function AppButton(props: AppButtonProps): JSX.Element {
 
-  const {children, ...propsAndAttrs} = props;
+  const {children, textColor, transparent, className,  ...propsAndAttrs} = props;
 
-  const styles = useMemo(() => {
-    if (props.style) return props.style;
+  const computedStyles = useMemo(() => {
 
-    const allStyles: React.CSSProperties = {
-      borderRadius: "20px",
-      padding: "8px 28px"
+    const transparentVariantProps: ButtonProps ={
+      disableRipple: true
     }
 
-    if (props.transparent) {
-        allStyles.color = "white"
-        allStyles.backgroundColor = "transparent";
+    const allStyles: React.CSSProperties = {
+      color: props.textColor ? props.textColor : "auto",
+      ...(props.style ? props.style : {}),
     }
 
     return allStyles;
   }, [props.style, props.transparent])
 
+  const AppButtonClasses = classNames(styles.AppButton, className as any, {
+    [styles.AppButton_transparent]: transparent,
+  } as any)
+
   return (
-    <Button style={styles} {...propsAndAttrs}>
+    <Button className={AppButtonClasses} style={computedStyles} {...propsAndAttrs}>
       {children}
     </Button>
   )
