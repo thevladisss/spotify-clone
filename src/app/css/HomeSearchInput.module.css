@@ -50,4 +50,10 @@
 
 .SearchIcon {
     padding: 0 12px !important;
+    color: grey !important;
+    transition: all .3s ease;
+}
+
+.SearchIcon:hover {
+    color: white !important;
 }
