@@ -1,0 +1,53 @@
+.HomeSearchInput {
+    transition: all 1s ease;
+    height: 48px;
+    width: 474px !important;
+}
+
+.HomeSearchInput:hover:not(.HomeSearchInput:has(input:focus)) * {
+    cursor: pointer;
+}
+
+.HomeSearchInput:has(input:focus) .SearchIcon {
+    cursor: default;
+}
+
+
+.HomeSearchInput  > div {
+    padding: 0;
+    height: 100%;
+}
+
+
+.HomeSearchInput fieldset {
+    transition: all 0.2s ease;
+}
+
+.HomeSearchInput input {
+    color: white;
+    font-size: 15px;
+}
+
+.BrowseIcon {
+    position: relative;
+    padding: 0 12px !important;
+}
+
+.BrowseIcon:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 24px;
+    border-left: 1px solid grey;
+    transform: translateY(-50%);
+    cursor: default;
+}
+
+.CloseIcon {
+    padding: 0 12px !important;
+}
+
+.SearchIcon {
+    padding: 0 12px !important;
+}
