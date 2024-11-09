@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Disclaimer
+
+**This project is a personal portfolio piece created to showcase my proficiency in front-end development. I do not claim any ownership or rights to the design, assets, or branding of Spotify. This website copy is solely intended to demonstrate my technical skills and is not affiliated with or endorsed by Spotify in any way.**
+
 ## Getting Started
 
 First, run the development server:
@@ -34,4 +38,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# spotify-copy
+# spotify-clone
