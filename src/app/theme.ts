@@ -26,6 +26,9 @@ const theme = createTheme({
       primary: '#333333', // Dark grey for text
       secondary: '#757575', // Medium grey for secondary text
     },
+    iconGrey: {
+      primary: "#B3B3B3FF"
+    }
   },
   components: {
     MuiButton: {
