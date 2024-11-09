@@ -9,19 +9,17 @@ import Image from 'next/image'
 function Navigation(): JSX.Element {
 
   return (
-    <div className="px-4 py-2 flex justify-between relative top-1 w-full bg-black">
-        <div className="flex gap-8 items-center w-4/6 w-full">
-          <div className="columns-2">
+    <div className="p-2 flex justify-between relative w-full bg-black">
+        <div className="flex gap-8 items-center justify-between w-4/6 w-full">
+          <div className="columns-auto">
             <Image height={32} width={32} src="/icons/logo_spotify_white.png" alt="Logo" />
           </div>
-          <div className="grow flex justify-center">
             <HomeSearchInput></HomeSearchInput>
-          </div>
-          <div className="flex gap-4 col-2">
-            <AppButton textColor="secondary">
+          <div className="columns-auto flex col-2">
+            <AppButton textColor="rgb(179, 179, 179)" className="mb-1" transparent>
               Sign up
             </AppButton>
-            <AppButton transparent className="py-1" size="large">
+            <AppButton color="white" textColor="black" className="py-1 mb-1" size="large">
               Log in
             </AppButton>
           </div>
