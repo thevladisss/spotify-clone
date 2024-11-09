@@ -1,0 +1,11 @@
+.AppButtonFab {
+    transition: all .4s ease;
+}
+
+.AppButtonFab:hover {
+    transform: scale(1.05);
+}
+
+.AppButtonFab .MuiFab-focusVisible {
+    padding: 40px !important;
+}
