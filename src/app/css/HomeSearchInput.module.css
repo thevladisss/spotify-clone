@@ -12,6 +12,10 @@
     cursor: default;
 }
 
+.HomeSearchInput:hover .SearchIcon svg {
+    fill: white;
+}
+
 
 .HomeSearchInput  > div {
     padding: 0;
@@ -25,12 +29,12 @@
 
 .HomeSearchInput input {
     color: white;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .BrowseIcon {
     position: relative;
-    padding: 0 12px !important;
+    padding: 0 16px 0 12px !important;
 }
 
 .BrowseIcon:before {
