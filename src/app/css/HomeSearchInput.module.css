@@ -32,6 +32,11 @@
     font-size: 16px;
 }
 
+.HomeSearchInput input::placeholder {
+    color: var(--text-subdued);
+    opacity: 1;
+}
+
 .BrowseIcon {
     position: relative;
     padding: 0 16px 0 12px !important;
