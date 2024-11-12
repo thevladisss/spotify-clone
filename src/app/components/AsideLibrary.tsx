@@ -6,19 +6,17 @@ import LibraryIcon from './icons/LibraryIcon'
 
 function AsideLibrary(): JSX.Element {
   return (
-    <aside className="py-2 px-2 mx-2 mb-2 bg-secondary-dark rounded-lg h-full">
+    <aside className="py-2 px-2 mx-2 bg-secondary-dark rounded-lg h-full">
       <div className="flex justify-between items-center">
-        <div className="flex justify-between items-center px-4">
-          <span role="icon">
-            <LibraryIcon></LibraryIcon>
+        <button className="flex items-center px-4">
+          <span role="img" aria-label="Library icon" className="me-3">
+            <LibraryIcon />
           </span>
-          <p className="m-none ml-2 font-bold">Your Library</p>
-        </div>
-        <div>
-          <IconButton sx={{ color: grey['500'] }}>
-            <AddIcon></AddIcon>
-          </IconButton>
-        </div>
+          <p className="m-0 font-bold">Your Library</p>
+        </button>
+        <IconButton sx={{ color: grey[500] }}>
+          <AddIcon />
+        </IconButton>
       </div>
     </aside>
   )
