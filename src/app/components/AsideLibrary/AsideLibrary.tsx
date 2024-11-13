@@ -13,17 +13,13 @@ function AsideLibrary(): JSX.Element {
       title: 'Create your first playlist',
       subtitle: "It's easy, we'll help you",
       buttonText: 'Create playlist',
-      onButtonClick: () => {
-        console.log('Creating playlist');
-      },
+      onButtonClick: () => {},
     },
     {
       title: "Let's find some podcasts to follow",
       subtitle: "We'll keep you updated on new episodes",
       buttonText: 'Browse podcasts',
-      onButtonClick: () => {
-        console.log('Browsing podcasts');
-      },
+      onButtonClick: () => {},
     },
   ];
 
