@@ -1,6 +1,6 @@
 import React from 'react'
 import Navigation from '@/app/components/Navigation'
-import AsideLibrary from '@/app/components/AsideLibrary'
+import AsideLibrary from '@/app/components/AsideLibrary/AsideLibrary'
 
 function MainLayout({ children }: any): JSX.Element {
   return (

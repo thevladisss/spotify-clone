@@ -1,18 +1,22 @@
 .AppButton {
-    border-radius: 20px;
-    padding: 8px 32px !important;
-    transition: all .4s ease;
+  border-radius: 20px;
+  padding: 8px 32px !important;
+  transition: all 0.4s ease;
 }
 
 .AppButton:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .AppButton_transparent {
-    color: white;
-    background-color: transparent !important;
+  color: white;
+  background-color: transparent !important;
 }
 
 .AppButton_transparent:hover {
-    color: white !important;
+  color: white !important;
+}
+
+.AppButton_small {
+  padding: 4px 16px !important;
 }
