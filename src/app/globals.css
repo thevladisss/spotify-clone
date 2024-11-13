@@ -6,10 +6,17 @@
   --background: #ffffff;
   --foreground: #171717;
   --secondary: #333333;
+
+  --screen-xs: 400px;
+  --screen-sm: 650px;
+  --screen-md: 840px;
+  --screen-lg: 1400px;
+  --screen-xl: 1920px;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+
     --background: #0a0a0a;
     --foreground: #ededed;
 
