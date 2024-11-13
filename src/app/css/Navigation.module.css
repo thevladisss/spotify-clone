@@ -1,0 +1,17 @@
+.NavigationDesktop {
+    height: 64px;
+}
+
+
+.NavigationDesktop-InputContainer {
+    max-width: 546px;
+    width: 100%;
+    min-width: auto;
+}
+
+@media screen and (min-width: var(--screen-md)) {
+   .NavigationDesktop-InputContainer {
+       width: 50%;
+       min-width: 350px;
+   }
+}

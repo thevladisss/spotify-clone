@@ -43,14 +43,14 @@
 }
 
 .BrowseIcon:before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    height: 24px;
-    border-left: 1px solid grey;
-    transform: translateY(-50%);
-    cursor: default;
+    /*content: "";*/
+    /*position: absolute;*/
+    /*top: 50%;*/
+    /*left: 0;*/
+    /*height: 24.5px;*/
+    /*border-left: 1px solid grey;*/
+    /*transform: translateY(-50%);*/
+    /*cursor: default;*/
 }
 
 .CloseIcon {

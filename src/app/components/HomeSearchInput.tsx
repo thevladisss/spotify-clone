@@ -25,7 +25,7 @@ function HomeSearchInput(props: Record<string, any>): JSX.Element {
   const hasInput = useMemo(() => Boolean(input.length), [input]);
 
   const searchElementIcon = (
-    <div>
+    <div className="IconContainer">
       <IconButton className={styles.SearchIcon} disableRipple size="medium">
         <SearchIcon color={palette.iconGrey.primary}></SearchIcon>
       </IconButton>
@@ -33,9 +33,8 @@ function HomeSearchInput(props: Record<string, any>): JSX.Element {
   );
 
   const closeElementIcon = (
-    <div>
+    <div className="IconContainer" style={{borderLeft: "1px solid grey"}}>
       <IconButton
-        onClick={handleClearInput}
         className={styles.CloseIcon}
         disableRipple
         size="large"
@@ -46,7 +45,7 @@ function HomeSearchInput(props: Record<string, any>): JSX.Element {
   );
 
   const browseElementIcon = (
-    <div>
+    <div className="IconContainer" style={{borderLeft: "1px solid grey"}}>
       <IconButton
         className={styles.BrowseIcon}
         disableRipple
