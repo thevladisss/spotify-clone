@@ -8,6 +8,10 @@ import LibraryIcon from '../icons/LibraryIcon';
 import AsideCard from './AsideCard';
 import AsideFooter from './AsideFooter';
 
+{
+  ('TODO: Make cards container scrollable; Footer overlayed on top of other components; Shadow for the title container');
+}
+
 function AsideLibrary(): JSX.Element {
   const asideCards = [
     {
