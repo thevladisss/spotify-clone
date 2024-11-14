@@ -25,37 +25,35 @@ function AsideLibrary(): JSX.Element {
   ];
 
   return (
-    <aside className="py-2 px-2 mx-2 bg-primary rounded-lg h-full">
-      <div className="flex justify-between items-center">
-        <button className="flex items-center px-4">
-          <span role="img" aria-label="Library icon" className="me-3">
-            <LibraryIcon />
-          </span>
-          <p className="font-bold">Your Library</p>
-        </button>
-        <IconButton sx={{ color: grey[500] }}>
-          <AddIcon />
-        </IconButton>
-      </div>
-      <div className="my-6"></div>
+    <aside className="px-2 pt-2  *:mx-2 bg-primary rounded-lg h-full flex flex-col justify-between">
       <div>
-        <div className="flex justify-between flex-col">
-          <div className="flex flex-col gap-3">
-            {asideCards.map((card, index) => (
-              <AsideCard
-                key={index}
-                title={card.title}
-                subtitle={card.subtitle}
-                buttonText={card.buttonText}
-                {...(card.onButtonClick && {
-                  onButtonClick: card.onButtonClick,
-                })}
-              />
-            ))}
-          </div>
-          <AsideFooter />
+        <div className="flex justify-between items-center">
+          <button className="flex items-center px-4">
+            <span role="img" aria-label="Library icon" className="me-3">
+              <LibraryIcon />
+            </span>
+            <p className="font-bold">Your Library</p>
+          </button>
+          <IconButton sx={{ color: grey[500] }}>
+            <AddIcon />
+          </IconButton>
+        </div>
+        <div className="my-6"></div>
+        <div className="flex flex-col gap-3">
+          {asideCards.map((card, index) => (
+            <AsideCard
+              key={index}
+              title={card.title}
+              subtitle={card.subtitle}
+              buttonText={card.buttonText}
+              {...(card.onButtonClick && {
+                onButtonClick: card.onButtonClick,
+              })}
+            />
+          ))}
         </div>
       </div>
+      <AsideFooter />
     </aside>
   );
 }
