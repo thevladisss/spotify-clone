@@ -20,28 +20,28 @@ const theme = createTheme({
       elevatedPress: '#191919',
     },
     white: {
-      main: "#fff",
+      main: '#fff',
     },
     text: {
       primary: '#333333', // Dark grey for text
       secondary: '#757575', // Medium grey for secondary text
     },
     iconGrey: {
-      primary: "#B3B3B3FF"
-    }
+      primary: '#B3B3B3FF',
+    },
   },
   components: {
     MuiButton: {
       styleOverrides: {
         root: {
-          borderRadius: "20px",
-          padding: "8px 20px",
-          fontFamily: "SpotifyMixUI",
-          fontWeight: "bold",
-          backgroundColor: "white"
-        }
-      }
-    }
+          borderRadius: '20px',
+          padding: '8px 20px',
+          fontFamily: 'SpotifyMixUI',
+          fontWeight: 'bold',
+          backgroundColor: 'white',
+        },
+      },
+    },
   },
   typography: {
     fontFamily: "'SpotifyMixUI', 'Helvetica', 'Arial', sans-serif",

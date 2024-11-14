@@ -1,21 +1,19 @@
-import React from 'react'
-import Navigation from '@/app/components/Navigation'
-import AsideLibrary from '@/app/components/AsideLibrary/AsideLibrary'
+import React from 'react';
+import Navigation from '@/app/components/Navigation';
+import AsideLibrary from '@/app/components/AsideLibrary/AsideLibrary';
 
 function MainLayout({ children }: any): JSX.Element {
   return (
-    <div className="h-screen flex flex-col">
-      <div className="mb-2">
-        <Navigation />
-        <div className="flex flex-1 overflow-hidden mt-1">
-          <div className="w-1/4 overflow-y-auto">
-            <AsideLibrary />
-          </div>
-          <div className="flex-1 overflow-y-auto">{children}</div>
+    <div className="absolute inset-0 flex flex-col mb-2">
+      <Navigation />
+      <div className="flex flex-1 overflow-hidden mt-1">
+        <div className="w-1/4 h-full">
+          <AsideLibrary />
         </div>
+        <div className="flex-1 h-full">{children}</div>
       </div>
     </div>
-  )
+  );
 }
 
-export default MainLayout
+export default MainLayout;

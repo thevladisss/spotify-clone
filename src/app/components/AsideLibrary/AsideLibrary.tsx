@@ -6,6 +6,7 @@ import { IconButton } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import LibraryIcon from '../icons/LibraryIcon';
 import AsideCard from './AsideCard';
+import AsideFooter from './AsideFooter';
 
 function AsideLibrary(): JSX.Element {
   const asideCards = [
@@ -37,16 +38,23 @@ function AsideLibrary(): JSX.Element {
         </IconButton>
       </div>
       <div className="my-6"></div>
-      <div className="flex flex-col gap-3">
-        {asideCards.map((card, index) => (
-          <AsideCard
-            key={index}
-            title={card.title}
-            subtitle={card.subtitle}
-            buttonText={card.buttonText}
-            {...(card.onButtonClick && { onButtonClick: card.onButtonClick })}
-          />
-        ))}
+      <div>
+        <div className="flex justify-between flex-col">
+          <div className="flex flex-col gap-3">
+            {asideCards.map((card, index) => (
+              <AsideCard
+                key={index}
+                title={card.title}
+                subtitle={card.subtitle}
+                buttonText={card.buttonText}
+                {...(card.onButtonClick && {
+                  onButtonClick: card.onButtonClick,
+                })}
+              />
+            ))}
+          </div>
+          <AsideFooter />
+        </div>
       </div>
     </aside>
   );

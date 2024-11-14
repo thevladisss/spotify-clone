@@ -6,7 +6,8 @@ import classNames from 'classnames';
 type AppButtonProps = {
   transparent?: boolean;
   textColor?: string;
-  size?: 'small';
+  size?: 'small' | 'xs';
+  outline?: boolean;
 } & ButtonProps &
   PropsWithChildren &
   HTMLProps<any>;
@@ -16,6 +17,7 @@ function AppButton(props: AppButtonProps): JSX.Element {
     children,
     textColor,
     transparent,
+    outline,
     size,
     className,
     ...propsAndAttrs
@@ -38,8 +40,10 @@ function AppButton(props: AppButtonProps): JSX.Element {
     styles.AppButton,
     className as any,
     {
+      [styles.AppButton_outline]: outline,
       [styles.AppButton_transparent]: transparent,
       [styles.AppButton_small]: size === 'small',
+      [styles.AppButton_xs]: size === 'xs',
     } as any
   );
 

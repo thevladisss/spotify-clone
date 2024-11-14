@@ -20,3 +20,13 @@
 .AppButton_small {
   padding: 4px 16px !important;
 }
+
+.AppButton_xs {
+  padding: 2px 12px !important;
+}
+
+.AppButton_outline {
+  border: 1px solid currentColor !important;
+  background-color: transparent !important;
+  color: inherit !important;
+}
