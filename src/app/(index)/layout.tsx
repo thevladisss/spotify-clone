@@ -7,7 +7,7 @@ function MainLayout({ children }: any): JSX.Element {
     <div className="absolute inset-0 flex flex-col mb-4">
       <Navigation />
       <div className="flex flex-1 overflow-hidden mt-1">
-        <div className="max-w-sm h-full">
+        <div className="max-w-sm h-full mx-2">
           <AsideLibrary />
         </div>
         <div className="flex-1 h-full">{children}</div>

@@ -25,7 +25,7 @@ function AsideLibrary(): JSX.Element {
   ];
 
   return (
-    <aside className="px-2 pt-2  *:mx-2 bg-primary rounded-lg h-full flex flex-col justify-between">
+    <aside className="px-2 pt-2 bg-primary rounded-lg h-full flex flex-col justify-between">
       <div>
         <div className="flex justify-between items-center">
           <button className="flex items-center px-4">

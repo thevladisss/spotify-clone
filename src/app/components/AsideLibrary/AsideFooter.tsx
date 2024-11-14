@@ -5,7 +5,7 @@ import LanguageIcon from '../icons/LanguageIcon';
 
 function AsideFooter(): JSX.Element {
   return (
-    <div className="text-[11px] text-[#B3B3B3] px-6">
+    <div className="text-[11px] text-[#B3B3B3] px-4">
       <div className="my-8">
         <div className="flex flex-wrap">
           <Link className="me-4 mt-1 mb-2" href={''}>
@@ -34,17 +34,19 @@ function AsideFooter(): JSX.Element {
           </Link>
         </div>
 
-        <Link className="me-4 mt-1 mb-2 text-white" href={''}>
+        <Link className="me-4 mt-1 mb-2 text-white text-xs" href={''}>
           Cookies
         </Link>
       </div>
 
       <div className="mb-8">
         <AppButton textColor="black" size="xs" outline={true}>
-          <span className="me-1">
-            <LanguageIcon />
-          </span>
-          <span className="font-bold text-white">English</span>
+          <div className="flex items-center gap-1">
+            <span>
+              <LanguageIcon />
+            </span>
+            <span className="font-bold text-white">English</span>
+          </div>
         </AppButton>
       </div>
     </div>
