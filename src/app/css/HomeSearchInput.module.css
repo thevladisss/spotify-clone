@@ -1,6 +1,10 @@
 .HomeSearchInput {
     transition: all 1s ease;
     height: 48px;
+    width: 100%;
+}
+
+@media screen and (min-width: var(--screen-md)) {
     width: 474px !important;
 }
 

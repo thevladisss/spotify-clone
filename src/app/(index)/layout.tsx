@@ -2,8 +2,9 @@ import React from "react";
 import Navigation from "@/app/components/Navigation";
 import AsideLibrary from "@/app/components/AsideLibrary";
 
-
 function MainLayout({ children }: any): JSX.Element {
+
+
   return (
     <div className="p-2">
       <div>

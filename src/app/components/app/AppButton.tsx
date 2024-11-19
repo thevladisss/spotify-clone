@@ -27,6 +27,7 @@ function AppButton(props: AppButtonProps): JSX.Element {
     return allStyles;
   }, [props.style, props.transparent]);
 
+
   const AppButtonClasses = classNames(
     styles.AppButton,
     className as any,
@@ -35,11 +36,17 @@ function AppButton(props: AppButtonProps): JSX.Element {
     } as any,
   );
 
+  const allProps = useMemo(() => {
+    return {
+      ...propsAndAttrs, ...transparentVariantProps
+    }
+  }, [transparentVariantProps, propsAndAttrs])
+
   return (
     <Button
       className={AppButtonClasses}
       style={computedStyles}
-      {...{ ...propsAndAttrs, ...transparentVariantProps }}
+      {...allProps}
     >
       {children}
     </Button>

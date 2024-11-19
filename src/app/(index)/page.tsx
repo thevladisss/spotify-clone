@@ -1,7 +1,13 @@
 import { Button } from "@mui/material";
 import HomeCard from "@/app/components/HomeCard";
+import classNames from "classnames";
 
-export default function Home() {
+type Props = {
+  featured: any[]
+}
+export default function Home(props: Props) {
+
+
   return (
     <div style={{backgroundColor: "rgb(83, 83, 83)", backgroundImage:"linear-gradient(rgba(0,0,0,.6) 0,#121212 100%), url('/images/bg_noise.svg')"}} className="bg-secondary-light h-full px-4 py-3 rounded-lg">
       <section className="w-full">
