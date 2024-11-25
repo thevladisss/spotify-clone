@@ -4,6 +4,7 @@
 
 
 .NavigationDesktop-InputContainer {
+    display: flex;
     max-width: 546px;
     width: 100%;
     min-width: auto;
@@ -13,6 +14,11 @@
    .NavigationDesktop-InputContainer {
        width: 50%;
        min-width: 350px;
+       max-width: 546px;
+   }
+
+    .NavigationDesktop-InputContainer .HomeSearchInput {
+       /*padding: 0 8px;*/
    }
 }
 

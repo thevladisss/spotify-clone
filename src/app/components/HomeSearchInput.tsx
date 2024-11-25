@@ -62,7 +62,6 @@ function HomeSearchInput(props: Record<string, any>): JSX.Element {
     <AppInput
       onInput={handleInput}
       size="small"
-      style={{ width: "400px" }}
       sx={(theme) => ({ backgroundColor: theme.palette.background.highlight, color: "red" })}
       color="white"
       placeholder="What do you want to play?"

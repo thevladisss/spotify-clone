@@ -19,7 +19,7 @@ function NavigationDesktop(): JSX.Element {
         </div>
         <div className="flex gap-1 static md:absolute left-0 justify-start md:justify-center w-full">
           {/*TODO: Do not use styles for at least border. AppButton should be customizable*/}
-          <div className={`${styles['NavigationDesktop-InputContainer']} flex gap-2`}>
+          <div className={`${styles['NavigationDesktop-InputContainer']}`}>
             <AppButtonFab
               disableRipple
               disableTouchRipple
@@ -34,7 +34,9 @@ function NavigationDesktop(): JSX.Element {
             >
               <HomeIcon></HomeIcon>
             </AppButtonFab>
-            <HomeSearchInput></HomeSearchInput>
+            <div className="md:px-2 w-full">
+              <HomeSearchInput></HomeSearchInput>
+            </div>
           </div>
         </div>
         <div className="columns-auto flex col-2">
