@@ -35,7 +35,7 @@
 
 
 .AudioContentCard-Image {
-    border-radius: 50%;
+    border-radius: 4px;
 }
 
 .AudioContentCard-Title {
@@ -67,4 +67,5 @@
 .AudioContentCard:hover .AudioContentCard-PlayButton {
     opacity: 1;
     transform: translateY(0);
+    pointer-events: initial;
 }

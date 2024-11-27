@@ -10,7 +10,7 @@ function MainLayout({ children }: any): JSX.Element {
       <div>
         <Navigation></Navigation>
         <div className="flex top-14 w-full gap-2 relative">
-          <div style={{ flex: "0 0 25%" }}>
+          <div style={{ flex: "0 0 20%" }}>
             <AsideLibrary></AsideLibrary>
           </div>
           <div className="grow">{children}</div>

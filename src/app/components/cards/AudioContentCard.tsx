@@ -10,14 +10,23 @@ type HomeCardProps = {
   title?: string;
   description?: string;
   imageSrc: string;
+  onContextMenu?: () => void
+  rounded: boolean
 };
 function AudioContentCard(props: HomeCardProps): JSX.Element {
+
+  const handleContextMenu = (e) => {
+    e.preventDefault()
+  }
+
+
   return (
-    <Box className={styles.AudioContentCard}>
+    <Box onContextMenu={handleContextMenu} className={styles.AudioContentCard}>
       <div>
         <div>
           <Image
             className={styles['AudioContentCard-Image']}
+            style={props.rounded ? {borderRadius: "50%"} : {}}
             width={200}
             height={200}
             src={props.imageSrc}
