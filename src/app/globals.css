@@ -125,3 +125,6 @@ body {
   background-color: #1a1a1a;
 }
 
+.bg-background-base {
+  background-color: var(--background-base);
+}

@@ -10,7 +10,8 @@ type Props = {
 export default function Home(props: Props) {
 
   return (
-    <div style={{backgroundColor: "rgb(83, 83, 83)", backgroundImage:"linear-gradient(rgba(0,0,0,.6) 0,#121212 100%), url('/images/bg_noise.svg')"}} className="bg-secondary-light h-full rounded-lg">
+    <div className="bg-background-base h-full rounded-lg relative">
+      <div className=" absolute top-0 left-0 w-full"  style={{ height: "256px", backgroundColor: "rgb(83, 83, 83)", backgroundImage:"linear-gradient(rgba(0,0,0,.6) 0,#121212 100%), url('/images/bg_noise.svg')"}}></div>
       <section className="pt-2">
         <div className="px-6">
           <DashboardSection title="Popular artists" href="#about">
