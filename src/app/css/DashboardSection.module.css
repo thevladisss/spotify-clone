@@ -1,0 +1,8 @@
+.DashboardSection {
+
+}
+
+.DashboardSection > div:first-of-type > div {
+    height: 40px;
+    margin-bottom: 8px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "@/app/components/Navigation";
-import AsideLibrary from "@/app/components/AsideLibrary";
+import LeftSideBarDesktop from "@/app/components/LeftSideBarDesktop";
 
 function MainLayout({ children }: any): JSX.Element {
 
@@ -10,9 +10,7 @@ function MainLayout({ children }: any): JSX.Element {
       <div>
         <Navigation></Navigation>
         <div className="flex top-14 w-full gap-2 relative">
-          <div style={{ flex: "0 0 20%" }}>
-            <AsideLibrary></AsideLibrary>
-          </div>
+          <LeftSideBarDesktop style={{width: "338px"}}></LeftSideBarDesktop>
           <div className="grow">{children}</div>
         </div>
       </div>

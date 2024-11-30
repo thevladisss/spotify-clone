@@ -1,0 +1,11 @@
+.LeftSideBarDesktop {
+}
+
+.LeftSideBarDesktop > header {
+    padding: 12px 16px 8px;
+}
+
+.LeftSideBarDesktop > header > div:first-of-type > button {
+    height: 40px;
+}
+
