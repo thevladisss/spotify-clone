@@ -33,6 +33,10 @@ const theme = createTheme({
   components: {
     MuiButton: {
       styleOverrides: {
+        startIcon: {
+          marginLeft: 0,
+          marginRight: 12
+        },
         root: {
           variants: [
             {
