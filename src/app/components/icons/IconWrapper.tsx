@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, {HTMLProps} from "react";
 
-function IconWrapper(props: any): JSX.Element {
-  return <>{props.children}</>;
+type Props = HTMLProps<any> & {}
+function IconWrapper(props: Props): JSX.Element {
+  return <span {...props}>{props.children}</span>;
 }
 
 export default IconWrapper;
