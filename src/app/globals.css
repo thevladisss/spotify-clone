@@ -54,6 +54,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'SpotifyMixUI', Arial, Helvetica, sans-serif;
+  line-height: normal;
 }
 
 @layer utilities {
@@ -79,7 +80,7 @@ body {
 @font-face {
   font-family: 'SpotifyMixUITitle';
   src: url('/fonts/SpotifyMixUITitle-Bold.woff2') format('woff2');
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -127,4 +128,11 @@ body {
 
 .bg-background-base {
   background-color: var(--background-base);
+}
+
+.text-title-small {
+  font-family: 'SpotifyMixUI', Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-wrap: balance;
+  font-size: 1.5rem;
 }
