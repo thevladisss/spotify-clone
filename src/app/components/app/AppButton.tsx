@@ -1,52 +1,59 @@
+"use client";
 import React, { useMemo, PropsWithChildren, HTMLProps } from "react";
 import { Button, ButtonProps } from "@mui/material";
 import styles from "@/app/css/AppButton.module.css";
-import classNames from "classnames";
 
 type AppButtonProps = {
   transparent?: boolean;
   textColor?: string;
+  bgColor?: string;
 } & ButtonProps &
   PropsWithChildren &
   HTMLProps<any>;
 
-function AppButton(props: AppButtonProps): JSX.Element {
-  const { children, textColor, transparent, className, ...propsAndAttrs } =
-    props;
+function AppButton({
+  children,
+  className,
+  style,
+  ...props
+}: AppButtonProps): JSX.Element {
+  const smallSizePadding = "4px 16px",
+    mediumSizePadding = "",
+    largeSizePadding = "8px 32px";
 
-  const transparentVariantProps: ButtonProps = {
-    disableRipple: true,
-  };
+  const allStyles = useMemo(() => {
+    const [paddingY = "", paddingX = ""] = (
+      !props.size
+        ? ""
+        : props.size === "small"
+          ? smallSizePadding
+          : props.size === "large"
+            ? largeSizePadding
+            : mediumSizePadding
+    ).split(" ");
 
-  const computedStyles = useMemo(() => {
     const allStyles: React.CSSProperties = {
-      color: textColor ? textColor : "auto",
-      ...(props.style ? props.style : {}),
+      paddingTop: paddingY,
+      paddingBottom: paddingY,
+      paddingLeft: paddingX,
+      paddingRight: paddingX,
+      ...(props.textColor ? { color: props.textColor } : {}),
+      ...(props.bgColor ? { backgroundColor: props.bgColor } : {}),
+      ...(style ? style : {}),
     };
 
     return allStyles;
-  }, [props.style, props.transparent]);
+  }, [style, props.textColor]);
 
-
-  const AppButtonClasses = classNames(
-    styles.AppButton,
-    className as any,
-    {
-      [styles.AppButton_transparent]: transparent,
-    } as any,
-  );
-
-  const allProps = useMemo(() => {
-    return {
-      ...propsAndAttrs, ...transparentVariantProps
-    }
-  }, [transparentVariantProps, propsAndAttrs])
+  const classes = `${styles.AppButton} ${className ?? ""} ${props.transparent ? styles.AppButton_transparent : ""}`;
 
   return (
     <Button
-      className={AppButtonClasses}
-      style={computedStyles}
-      {...allProps}
+      className={classes}
+      style={allStyles}
+      color={props.color}
+      size={props.size}
+      sx={props.sx}
     >
       {children}
     </Button>
